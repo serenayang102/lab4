@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Think before you react</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;800&family=Newsreader:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-mood="tense">
+  <main>
+    <header>
+      <h1>Think before you react</h1>
+      <p class="lede">Four messages are about to land. Choose how you answer each one. The page keeps score of your calm.</p>
+    </header>
+
+    <section class="meter" aria-label="Calm level">
+      <p><span id="mood-name">Tense</span>, calm at <span id="calm-value">60</span> of 100</p>
+      <div class="track"><div id="fill"></div></div>
+    </section>
+
+    <section id="stage" aria-live="polite"></section>
+    <p id="nudge" role="status"></p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
